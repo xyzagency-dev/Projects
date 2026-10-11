@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMEN & CO. | Fine Art & Commercial Photography Studio — Tribeca & Mayfair</title>
+  <meta name="description" content="Award-winning luxury photography studio specializing in editorial fashion, high-end commercial campaigns, destination weddings, and executive portraiture. Powered by medium format Hasselblad precision.">
+  <meta name="keywords" content="photography studio, editorial photography, luxury wedding photographer, commercial advertising photographer, medium format hasselblad, fashion photography nyc">
+  <meta name="author" content="LUMEN & CO.">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LUMEN & CO. | Luxury Photography Studio">
+  <meta property="og:description" content="Capturing Light, Defining Legacy. Medium format precision for iconic editorial, wedding, and commercial commissions.">
+  <meta property="og:image" content="assets/images/hero-editorial.jpg">
+
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/components.css">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d4af37'><circle cx='12' cy='12' r='10'/><circle cx='12' cy='12' r='4' fill='%230a0a0c'/></svg>">
+</head>
+<body>
+
+  <!-- ========================================================================
+       STICKY NAVBAR
+       ======================================================================== -->
+  <header class="navbar" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="LUMEN & CO. Home">
+        <span class="brand-title">LUMEN & CO.</span>
+        <span class="brand-subtitle">STUDIO • TRIBECA & MAYFAIR</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#retouching" class="nav-link">Color & Retouch</a></li>
+          <li><a href="#studio-space" class="nav-link">The Studio</a></li>
+          <li><a href="#calculator" class="nav-link">Investment Estimator</a></li>
+          <li><a href="#pricing" class="nav-link">Packages</a></li>
+          <li><a href="#journal" class="nav-link">Journal</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Audio Acoustic shutter toggle -->
+        <button id="audioToggleBtn" class="audio-toggle-btn" title="Toggle Camera Shutter Acoustic Feedback" aria-label="Audio acoustics">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </button>
+
+        <!-- Theme Mode Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle theme">
+          <svg id="themeToggleIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- VIP Client Vault Access Button -->
+        <button class="btn btn-secondary btn-sm" data-open-portal title="Access Client Gallery Vault">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          VIP Vault
+        </button>
+
+        <!-- Book Commission CTA -->
+        <button class="btn btn-primary btn-sm" data-open-booking data-service="Editorial Session">
+          Inquire Date
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-links">
+      <li><a href="#portfolio" class="mobile-nav-link">Portfolio</a></li>
+      <li><a href="#retouching" class="mobile-nav-link">Color & Retouching</a></li>
+      <li><a href="#studio-space" class="mobile-nav-link">The Studio Space</a></li>
+      <li><a href="#calculator" class="mobile-nav-link">Investment Estimator</a></li>
+      <li><a href="#pricing" class="mobile-nav-link">Investment Packages</a></li>
+      <li><a href="#journal" class="mobile-nav-link">Studio Journal</a></li>
+    </ul>
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      <button class="btn btn-secondary" data-open-portal style="width: 100%;">
+        Access VIP Client Vault (Demo PIN: 2026)
+      </button>
+      <button class="btn btn-primary" data-open-booking style="width: 100%;">
+        Reserve Commission Date
+      </button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       HERO SECTION
+       ======================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-glow-blob"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="eyebrow">Established 2014 • Hasselblad Master Studio</div>
+        <h1 class="hero-headline">
+          Capturing Light, Defining <span class="gold-highlight">Legacy</span>.
+        </h1>
+        <p class="hero-subhead">
+          Medium-format visual storytelling for haute couture editorial campaigns, architectural spaces, luxury destination weddings, and iconic executive portraiture.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#portfolio" class="btn btn-primary btn-lg">
+            Explore Portfolio
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#calculator" class="btn btn-secondary btn-lg">
+            Custom Quote Estimator
+          </a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <div class="metric-num">1,240+</div>
+            <div class="metric-label">Commissions Captured</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-num">48</div>
+            <div class="metric-label">International Covers</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-num">100MP</div>
+            <div class="metric-label">Medium Format Clarity</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media-wrapper">
+        <div class="hero-frame">
+          <img src="assets/images/hero-editorial.jpg" alt="Editorial Fashion Fine Art Photography by Lumen & Co." id="heroMainImg">
+        </div>
+        <div class="hero-floating-badge">
+          <div class="badge-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <div>
+            <div class="badge-text-title">Vogue & Harper’s Featured</div>
+            <div class="badge-text-sub">16-Bit RAW True Color Science</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PRESS & PUBLICATION RECOGNITION STRIP
+       ======================================================================== -->
+  <section class="press-strip" aria-label="Press Recognition">
+    <div class="container press-logos">
+      <span class="press-item">Vogue</span>
+      <span class="press-item">Harper’s Bazaar</span>
+      <span class="press-item">Architectural Digest</span>
+      <span class="press-item">Elle Luxe</span>
+      <span class="press-item">GQ Magazine</span>
+      <span class="press-item">Forbes Life</span>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SERVICE PILLARS SECTION
+       ======================================================================== -->
+  <section class="pillars-section" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="eyebrow">Studio Specializations</div>
+        <h2 class="section-title">Artistry Rooted in <em>Technical Precision</em></h2>
+        <p class="section-desc">
+          Every commission receives meticulous lighting design, calibrated medium-format sensors, and museum-grade master grading.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-number">01 // EDITORIAL & FASHION</div>
+          <h3 class="pillar-title">Haute Couture & Lookbooks</h3>
+          <p class="pillar-desc">
+            Campaign imagery that commands magazine covers and luxury runway narratives with dramatic cinematic lighting.
+          </p>
+          <ul class="pillar-features">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg> Tethered live Capture One Pro client monitor</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg> High-end skin frequency separation retouch</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg> Wardrobe and styling suite access</li>
+          </ul>
+          <button class="btn btn-outline-gold btn-sm" data-open-booking data-service="Editorial Fashion">Book Editorial Session</button>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">02 // LUXURY WEDDINGS</div>
+          <h3 class="pillar-title">Destination & Estate Vows</h3>
+          <p class="pillar-desc">
+            Documentary elegance across Lake Como, the Amalfi Coast, Paris, and historic European private villas.
+          </p>
+          <ul class="pillar-features">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg> Dual master photographers on set</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg> Hand-bound Italian leather archival album</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg> 48-hour sneak peek preview delivery</li>
+          </ul>
+          <button class="btn btn-outline-gold btn-sm" data-open-booking data-service="Luxury Wedding">Book Destination Wedding</button>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">03 // COMMERCIAL & BRANDS</div>
+          <h3 class="pillar-title">Horology, Jewelry & Products</h3>
+          <p class="pillar-desc">
+            Sub-millimeter macro focus stacking and controlled specular highlights for high-horology and fragrance brands.
+          </p>
+          <ul class="pillar-features">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg> 150MP Phase One medium format fidelity</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg> Full worldwide advertising buyout options</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg> Complex multi-frame focus stacking</li>
+          </ul>
+          <button class="btn btn-outline-gold btn-sm" data-open-booking data-service="Commercial Campaign">Commission Commercial Shoot</button>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">04 // EXECUTIVE PORTRAITURE</div>
+          <h3 class="pillar-title">VIP & C-Suite Branding</h3>
+          <p class="pillar-desc">
+            Distinguished portraits for industry visionaries, Forbes 30u30 founders, and international creative directors.
+          </p>
+          <ul class="pillar-features">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg> 90-minute bespoke studio session</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg> Private VIP client proofing lounge</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg> Multi-format crops for press & print</li>
+          </ul>
+          <button class="btn btn-outline-gold btn-sm" data-open-booking data-service="Executive Portraiture">Schedule Executive Portrait</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FILTERABLE PORTFOLIO SHOWCASE & EXIF LIGHTBOX
+       ======================================================================== -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="eyebrow">Curated Archive</div>
+        <h2 class="section-title">Selected Works & <em>Publications</em></h2>
+        <p class="section-desc">
+          Click any frame to inspect the camera settings, medium format optics, and lighting design behind the shot.
+        </p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="portfolio-controls" role="tablist">
+        <button class="filter-btn active" data-filter="all">All Disciplines</button>
+        <button class="filter-btn" data-filter="editorial">Editorial & Fashion</button>
+        <button class="filter-btn" data-filter="wedding">Luxury Weddings</button>
+        <button class="filter-btn" data-filter="commercial">Commercial & Objects</button>
+        <button class="filter-btn" data-filter="architecture">Architecture & Space</button>
+        <button class="filter-btn" data-filter="portraiture">Fine Portraiture</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- Rendered dynamically by portfolio.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       INTERACTIVE BEFORE / AFTER RETOUCHING & COLOR SCIENCE SLIDER
+       ======================================================================== -->
+  <section class="comparison-section" id="retouching">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="eyebrow">Color Science & Post-Production</div>
+        <h2 class="section-title">16-Bit RAW vs <em>Master Editorial Grade</em></h2>
+        <p class="section-desc">
+          Drag the brass slider horizontally to compare the uncompressed flat camera capture with our finished fine art retouching. Skin texture is authentically preserved without plasticization.
+        </p>
+      </div>
+
+      <div class="comparison-wrapper">
+        <div class="comparison-container" id="comparisonContainer">
+          <!-- After Image (Base) -->
+          <img src="assets/images/retouch-after.jpg" alt="Master Editorial Retouch & Warm Champagne Color Grade" class="comparison-image" id="comparisonAfterImg">
+          
+          <!-- Before Image (Overlay) -->
+          <div class="comparison-overlay" id="comparisonOverlay">
+            <img src="assets/images/retouch-before.jpg" alt="16-Bit Flat RAW Sensor Capture" class="comparison-image" id="comparisonBeforeImg">
+          </div>
+
+          <!-- Handle -->
+          <div class="comparison-handle" id="comparisonHandle" aria-label="Slider handle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="15 18 9 12 15 6"></polyline>
+              <polyline points="9 18 3 12 9 6" style="display:none;"></polyline>
+            </svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="comparison-badge badge-before">RAW Sensor Capture (Flat Profile)</div>
+          <div class="comparison-badge badge-after">Master Editorial Grade (DCI-P3)</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; text-align: center;">
+        <div>
+          <span style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.9rem;">01. FREQUENCY SEPARATION</span>
+          <p style="font-size: 0.85rem; color: var(--text-muted); max-width: 260px;">Preserves micro-pore skin integrity and natural dermal luminous glow.</p>
+        </div>
+        <div>
+          <span style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.9rem;">02. CALIBRATED COLOR SCIENCE</span>
+          <p style="font-size: 0.85rem; color: var(--text-muted); max-width: 260px;">Wide gamut DCI-P3 & ProPhoto RGB master delivery for archival prints.</p>
+        </div>
+        <div>
+          <span style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.9rem;">03. SPECULAR HARMONIZATION</span>
+          <p style="font-size: 0.85rem; color: var(--text-muted); max-width: 260px;">Subtle contouring that accentuates bone structure and jewelry reflection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       STUDIO SPACE & PRODUCTION CAPABILITIES
+       ======================================================================== -->
+  <section class="studio-space-section" id="studio-space">
+    <div class="container">
+      <div class="hero-grid" style="align-items: center;">
+        <div class="hero-frame">
+          <img src="assets/images/studio-space.jpg" alt="Lumen Daylight Infinity Loft Studio Tribeca" style="height: 520px;">
+        </div>
+
+        <div>
+          <div class="eyebrow">The Production Facility</div>
+          <h2 class="section-title">An Atelier Designed for <em>Pure Light</em></h2>
+          <p class="section-desc" style="margin-bottom: 2rem;">
+            Located in the historic cast-iron district of Tribeca, our 3,500 sq.ft daylight studio features 16-foot vaulted ceilings, a continuous two-wall curved cyclorama, and floor-to-ceiling north-facing industrial windows.
+          </p>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2.5rem;">
+            <div class="glass-card" style="padding: 1.4rem;">
+              <h4 style="font-size: 1rem; color: var(--accent-gold); margin-bottom: 0.3rem;">3,500 Sq.Ft Daylight Loft</h4>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">North-facing windows with seamless motorized blackouts.</p>
+            </div>
+            <div class="glass-card" style="padding: 1.4rem;">
+              <h4 style="font-size: 1rem; color: var(--accent-gold); margin-bottom: 0.3rem;">Profoto & Broncolor Grid</h4>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">High-speed sync 2400J generators, softboxes, and fresnels.</p>
+            </div>
+            <div class="glass-card" style="padding: 1.4rem;">
+              <h4 style="font-size: 1rem; color: var(--accent-gold); margin-bottom: 0.3rem;">Tethered 4K Client Lounge</h4>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Calibrated EIZO ColorEdge monitors with Capture One Live.</p>
+            </div>
+            <div class="glass-card" style="padding: 1.4rem;">
+              <h4 style="font-size: 1rem; color: var(--accent-gold); margin-bottom: 0.3rem;">VIP Glam & Styling Suite</h4>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Three-station illuminated vanities and steamer dressing room.</p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem;">
+            <button class="btn btn-primary" data-open-booking data-service="Studio Rental & Commission">
+              Reserve Studio Space
+            </button>
+            <a href="#calculator" class="btn btn-secondary">
+              Calculate Session Cost
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       INTERACTIVE SESSION INVESTMENT & QUOTE CALCULATOR
+       ======================================================================== -->
+  <section class="calculator-section" id="calculator">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="eyebrow">Instant Commission Estimator</div>
+        <h2 class="section-title">Configure Your <em>Bespoke Commission</em></h2>
+        <p class="section-desc">
+          Select your session discipline, duration scope, production add-ons, and licensing terms to generate an accurate investment estimate.
+        </p>
+      </div>
+
+      <div class="calculator-container">
+        <!-- Configuration Panel -->
+        <div class="calc-options-panel">
+          <!-- Step 1: Session Discipline -->
+          <div class="calc-step">
+            <div class="calc-step-title">
+              <span>01.</span> Select Commission Discipline
+            </div>
+            <div class="session-type-grid">
+              <div class="session-radio-card active" data-session="editorial">
+                <div class="session-name">Editorial & Fashion Lookbook</div>
+                <div class="session-base-price">Base: $3,200</div>
+              </div>
+              <div class="session-radio-card" data-session="wedding">
+                <div class="session-name">Luxury Wedding & Elopement</div>
+                <div class="session-base-price">Base: $4,500</div>
+              </div>
+              <div class="session-radio-card" data-session="commercial">
+                <div class="session-name">Commercial Brand & Products</div>
+                <div class="session-base-price">Base: $5,800</div>
+              </div>
+              <div class="session-radio-card" data-session="portraiture">
+                <div class="session-name">Executive & VIP Portraiture</div>
+                <div class="session-base-price">Base: $1,400</div>
+              </div>
+              <div class="session-radio-card" data-session="architecture">
+                <div class="session-name">Architectural & Interior Space</div>
+                <div class="session-base-price">Base: $2,600</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Duration / Scope -->
+          <div class="calc-step">
+            <div class="calc-step-title">
+              <span>02.</span> Scope & Duration
+            </div>
+            <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+              <label style="display: flex; align-items: center; gap: 0.6rem; cursor: pointer; font-size: 0.9rem;">
+                <input type="radio" name="calcDuration" value="half" style="accent-color: var(--accent-gold);">
+                Half-Day (Up to 4h)
+              </label>
+              <label style="display: flex; align-items: center; gap: 0.6rem; cursor: pointer; font-size: 0.9rem;">
+                <input type="radio" name="calcDuration" value="full" checked style="accent-color: var(--accent-gold);">
+                Full-Day (Up to 8h)
+              </label>
+              <label style="display: flex; align-items: center; gap: 0.6rem; cursor: pointer; font-size: 0.9rem;">
+                <input type="radio" name="calcDuration" value="multi" style="accent-color: var(--accent-gold);">
+                Multi-Day / Destination (2-3 Days)
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 3: Production Add-ons -->
+          <div class="calc-step">
+            <div class="calc-step-title">
+              <span>03.</span> Bespoke Add-Ons & Enhancements
+            </div>
+            <div class="calc-addons-list">
+              <div class="addon-checkbox-row checked" data-addon="rush_turnaround">
+                <div class="addon-info">
+                  <div class="custom-checkbox">✓</div>
+                  <span class="addon-name">48-Hour Express Delivery & Live On-Set Culling</span>
+                </div>
+                <span class="addon-price">+$950</span>
+              </div>
+              <div class="addon-checkbox-row" data-addon="drone">
+                <div class="addon-info">
+                  <div class="custom-checkbox">✓</div>
+                  <span class="addon-name">Cinema 4K Aerial Drone Capture & Licensed Pilot</span>
+                </div>
+                <span class="addon-price">+$850</span>
+              </div>
+              <div class="addon-checkbox-row" data-addon="second_shooter">
+                <div class="addon-info">
+                  <div class="custom-checkbox">✓</div>
+                  <span class="addon-name">Second Lead Associate Photographer</span>
+                </div>
+                <span class="addon-price">+$1,200</span>
+              </div>
+              <div class="addon-checkbox-row" data-addon="album">
+                <div class="addon-info">
+                  <div class="custom-checkbox">✓</div>
+                  <span class="addon-name">Hand-Bound Italian Leather Archival Art Album (12x12")</span>
+                </div>
+                <span class="addon-price">+$1,600</span>
+              </div>
+              <div class="addon-checkbox-row" data-addon="stylist">
+                <div class="addon-info">
+                  <div class="custom-checkbox">✓</div>
+                  <span class="addon-name">On-Set Master Hair, Makeup & Wardrobe Stylist</span>
+                </div>
+                <span class="addon-price">+$1,100</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: Commercial Rights Buyout -->
+          <div class="calc-step" style="margin-bottom: 0;">
+            <div class="calc-step-title">
+              <span>04.</span> Usage & Commercial Rights
+            </div>
+            <label style="display: flex; align-items: center; justify-content: space-between; padding: 1.1rem; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); cursor: pointer; background: rgba(255,255,255,0.02);">
+              <div>
+                <div style="font-weight: 600; font-size: 0.92rem;">Worldwide Commercial Advertising Buyout</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Unrestricted global broadcast, billboard, and print advertising rights (+35%)</div>
+              </div>
+              <input type="checkbox" id="commercialLicenseToggle" style="accent-color: var(--accent-gold); width: 20px; height: 20px;">
+            </label>
+          </div>
+        </div>
+
+        <!-- Real-time Investment Summary Panel -->
+        <div class="calc-summary-panel">
+          <h3 class="summary-heading">Investment Breakdown</h3>
+
+          <div class="summary-line-item">
+            <span>Session:</span>
+            <span class="bold" id="calcSummarySession">Fashion & Editorial Campaign</span>
+          </div>
+
+          <div class="summary-line-item">
+            <span>Duration:</span>
+            <span id="calcSummaryDuration">Full-Day (Up to 8 Hours)</span>
+          </div>
+
+          <div class="summary-line-item">
+            <span>Base Production:</span>
+            <span id="calcSummaryBase">$5,600</span>
+          </div>
+
+          <div class="summary-line-item">
+            <span>Selected Add-Ons:</span>
+            <span id="calcSummaryAddons">+$950</span>
+          </div>
+
+          <div class="summary-line-item" id="calcSummaryLicenseRow" style="display: none; color: var(--accent-gold);">
+            <span>Global Commercial Rights:</span>
+            <span id="calcSummaryLicense">+$0</span>
+          </div>
+
+          <div class="summary-line-item" style="border-top: 1px solid var(--border-subtle); padding-top: 0.8rem; margin-top: 0.8rem;">
+            <span>Expected Deliverables:</span>
+            <span id="calcSummaryDeliverables" style="color: var(--accent-gold-light);">35 Haute Retouched Stills</span>
+          </div>
+
+          <div class="summary-total-box">
+            <div class="total-label">Total Commission Investment</div>
+            <div class="total-amount" id="calcSummaryTotal">$6,550</div>
+            <div class="deposit-note">Initial 30% Retainer to Secure Date: <strong id="calcSummaryDeposit" style="color: var(--text-primary);">$1,965</strong></div>
+          </div>
+
+          <button id="lockQuoteBtn" class="btn btn-primary btn-lg" style="width: 100%;">
+            Lock In Quote & Reserve Date
+          </button>
+          <p style="text-align: center; font-size: 0.78rem; color: var(--text-muted); margin-top: 0.8rem;">
+            Includes comprehensive creative pre-production and consultation call.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       VIP CLIENT PROOFING VAULT BANNER & PREVIEW
+       ======================================================================== -->
+  <section class="vip-banner-section">
+    <div class="container">
+      <div class="vip-portal-banner">
+        <div>
+          <div class="eyebrow">Private Client Delivery System</div>
+          <h2 class="section-title" style="margin-bottom: 0.8rem;">Private VIP Client Vault</h2>
+          <p class="section-desc">
+            Commissioned clients receive an encrypted PIN code to access their proofing gallery, favorite selections for retouching, and download uncompressed master TIFF archives.
+          </p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.8rem;">
+          <button class="btn btn-primary btn-lg" data-open-portal>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            Launch Client Portal Demo
+          </button>
+          <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-gold);">
+            ✨ Interactive Demo Access PIN: 2026
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TRANSPARENT TIERED PACKAGES
+       ======================================================================== -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="eyebrow">Curated Collections</div>
+        <h2 class="section-title">Transparent Signature <em>Packages</em></h2>
+        <p class="section-desc">
+          Turnkey packages tailored for editorial spreads, high-society weddings, and luxury brand narratives.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Tier 1 -->
+        <div class="pricing-card">
+          <h3 class="pricing-tier-name">The Atelier</h3>
+          <p class="pricing-tier-desc">Ideal for executive portraiture, VIP lookbooks, and intimate editorial spreads.</p>
+          <div class="pricing-price">$2,400</div>
+          <div class="pricing-frequency">Per Commission</div>
+
+          <ul class="pricing-feature-list">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 3-Hour Daylight Studio Session</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 15 Master Retouched High-Res Stills</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Private VIP Proofing Portal (60-day access)</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Personal & Editorial Press Rights</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 5-Day Delivery Turnaround</li>
+          </ul>
+
+          <button class="btn btn-outline-gold" data-open-booking data-service="The Atelier Package">
+            Select Atelier
+          </button>
+        </div>
+
+        <!-- Tier 2 (Featured) -->
+        <div class="pricing-card featured">
+          <div class="pricing-card-badge">Most Commissioned</div>
+          <h3 class="pricing-tier-name">The Signature</h3>
+          <p class="pricing-tier-desc">Our flagship full-day production for commercial brands and luxury weddings.</p>
+          <div class="pricing-price">$5,200</div>
+          <div class="pricing-frequency">Per Commission</div>
+
+          <ul class="pricing-feature-list">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Full-Day Coverage (Up to 8 Hours)</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Lead Master + Associate Second Photographer</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 50 Fine Art Retouched Master Deliverables</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 48-Hour Curated Sneak Peek Gallery</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Archival Hand-Bound Linen Box + USB Master</li>
+          </ul>
+
+          <button class="btn btn-primary" data-open-booking data-service="The Signature Package">
+            Commission Signature
+          </button>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="pricing-card">
+          <h3 class="pricing-tier-name">The Sovereign</h3>
+          <p class="pricing-tier-desc">Multi-day destination coverage, haute horology, and global advertising buyouts.</p>
+          <div class="pricing-price">$9,800</div>
+          <div class="pricing-frequency">Per Commission</div>
+
+          <ul class="pricing-feature-list">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Multi-Day Coverage (NYC, London, or Destination)</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Full Worldwide Commercial Advertising Buyout</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Cinema 4K Aerial Drone Coverage Included</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Handcrafted Italian 14x14" Leather Archival Album</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Dedicated Retouching Director & Priority Rush</li>
+          </ul>
+
+          <button class="btn btn-outline-gold" data-open-booking data-service="The Sovereign Package">
+            Commission Sovereign
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TESTIMONIALS & CLIENT ACCLAIM
+       ======================================================================== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="eyebrow">Client Endorsements</div>
+        <h2 class="section-title">Words from Our <em>Patrons</em></h2>
+        <p class="section-desc">
+          Reflections from luxury brands, editorial editors, and couples who entrusted their once-in-a-lifetime moments to our lens.
+        </p>
+      </div>
+
+      <div class="testimonial-track">
+        <div class="testimonial-card">
+          <div>
+            <div class="stars-row">★★★★★</div>
+            <p class="testimonial-quote">
+              "Lumen & Co. elevated our fall campaign into an artwork worthy of the Louvre. Their mastery of medium format shadows and texture is completely unmatched in modern commercial photography."
+            </p>
+          </div>
+          <div class="client-meta">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Camille Laurent" class="client-avatar">
+            <div>
+              <div class="client-name">Camille Laurent</div>
+              <div class="client-role">Creative Director, Maison Marais Paris</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div>
+            <div class="stars-row">★★★★★</div>
+            <p class="testimonial-quote">
+              "Our Lake Como wedding portraits look like 19th-century royal paintings yet feel completely effortless. The private client portal made choosing our album prints a joyful, seamless experience."
+            </p>
+          </div>
+          <div class="client-meta">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&q=80" alt="Julian & Elena Montgomery" class="client-avatar">
+            <div>
+              <div class="client-name">Julian & Elena Montgomery</div>
+              <div class="client-role">Villa Balbianello, Lake Como</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div>
+            <div class="stars-row">★★★★★</div>
+            <p class="testimonial-quote">
+              "Their executive portraiture captured both executive authority and human warmth. It appeared across the Financial Times and Bloomberg. True masters of their craft."
+            </p>
+          </div>
+          <div class="client-meta">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Sir David Sterling" class="client-avatar">
+            <div>
+              <div class="client-name">Sir David Sterling</div>
+              <div class="client-role">Managing Partner, Sterling Global</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       STUDIO JOURNAL / STORIES
+       ======================================================================== -->
+  <section class="journal-section" id="journal">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="eyebrow">Studio Notes & Insights</div>
+        <h2 class="section-title">From the <em>Darkroom</em></h2>
+        <p class="section-desc">
+          Behind-the-lens essays on medium format optics, wedding timeline curation, and lighting architectures.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <article class="glass-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80" alt="Lake Como lighting" style="height: 220px; object-fit: cover;">
+          <div style="padding: 1.8rem; display: flex; flex-direction: column; flex-grow: 1;">
+            <div style="font-size: 0.75rem; color: var(--accent-gold); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.5rem;">Curation Guide</div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.3rem; margin-bottom: 0.8rem;">The Golden Hour Fallacy: Embracing Midday Italian Light</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.2rem; flex-grow: 1;">
+              How deep shadows and high-contrast Mediterranean noon sun yield striking editorial silhouettes.
+            </p>
+            <span style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">5 MIN READ • ESSAY NO. 42</span>
+          </div>
+        </article>
+
+        <article class="glass-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+          <img src="assets/images/retouch-after.jpg" alt="Skin texture analysis" style="height: 220px; object-fit: cover;">
+          <div style="padding: 1.8rem; display: flex; flex-direction: column; flex-grow: 1;">
+            <div style="font-size: 0.75rem; color: var(--accent-gold); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.5rem;">Technical Craft</div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.3rem; margin-bottom: 0.8rem;">Why 16-Bit RAW Outlives Digital AI Interpolation</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.2rem; flex-grow: 1;">
+              An examination of true physical optical sensor physics, tonal graduation, and human micro-expression.
+            </p>
+            <span style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">8 MIN READ • CRAFT SERIES</span>
+          </div>
+        </article>
+
+        <article class="glass-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+          <img src="assets/images/studio-space.jpg" alt="Studio daylight loft" style="height: 220px; object-fit: cover;">
+          <div style="padding: 1.8rem; display: flex; flex-direction: column; flex-grow: 1;">
+            <div style="font-size: 0.75rem; color: var(--accent-gold); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.5rem;">Atelier Life</div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.3rem; margin-bottom: 0.8rem;">Inside Studio A: Tribeca's North-Facing Secret</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.2rem; flex-grow: 1;">
+              How 19th-century cast-iron window frames diffuse pure, shadowless northern skylight.
+            </p>
+            <span style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">4 MIN READ • ARCHITECTURE</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-title">LUMEN & CO.</div>
+          <p class="footer-brand-desc">
+            Fine Art & Commercial Photography Studio. Medium format precision for iconic editorial spreads, luxury destinations, and visionary individuals.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.8;">
+            <div><strong>Tribeca Atelier:</strong> 178 Franklin Street, New York, NY 10013</div>
+            <div><strong>Mayfair Studio:</strong> 14 Berkeley Square, London W1J 6BL</div>
+            <div><strong>Inquiries:</strong> commissions@lumenstudio.com</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">Portfolios</div>
+          <ul class="footer-links">
+            <li><a href="#portfolio">Editorial Fashion</a></li>
+            <li><a href="#portfolio">Luxury Weddings</a></li>
+            <li><a href="#portfolio">Commercial Campaigns</a></li>
+            <li><a href="#portfolio">Architectural Spaces</a></li>
+            <li><a href="#portfolio">Executive Portraits</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Atelier</div>
+          <ul class="footer-links">
+            <li><a href="#retouching">Color Science</a></li>
+            <li><a href="#studio-space">Tribeca Loft Space</a></li>
+            <li><a href="#calculator">Investment Calculator</a></li>
+            <li><a href="#pricing">Signature Packages</a></li>
+            <li><a href="#" data-open-portal>VIP Client Vault</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Atelier Circle</div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Receive exclusive seasonal booking windows and invitation-only gallery previews.
+          </p>
+          <form class="footer-newsletter" id="newsletterForm">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn btn-primary btn-sm" style="width: 100%;">
+              Join Atelier Circle
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 LUMEN & CO. Photography Studio. All Rights Reserved. Hasselblad Master Certified.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" style="color: var(--text-muted);">Commercial Rights & Licensing</a>
+          <a href="#" style="color: var(--text-muted);">Privacy Policy</a>
+          <a href="#hero" style="color: var(--accent-gold);">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL: FULLSCREEN LIGHTBOX WITH EXIF
+       ======================================================================== -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Image Lightbox">
+    <button class="lightbox-close-btn" id="lightboxCloseBtn" title="Close Lightbox (Esc)">✕</button>
+    <button class="lightbox-nav-btn lightbox-prev" id="lightboxPrevBtn" title="Previous Image (Left Arrow)">❮</button>
+    <button class="lightbox-nav-btn lightbox-next" id="lightboxNextBtn" title="Next Image (Right Arrow)">❯</button>
+
+    <div class="lightbox-container">
+      <div class="lightbox-main">
+        <div class="lightbox-image-wrap">
+          <img src="" alt="" class="lightbox-image" id="lightboxImg">
+        </div>
+      </div>
+
+      <div class="lightbox-sidebar">
+        <div>
+          <div id="lightboxCategory" class="portfolio-tag">CATEGORY</div>
+          <h2 id="lightboxTitle" style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 0.5rem; line-height: 1.2;">Title</h2>
+          <div id="lightboxClient" style="color: var(--accent-gold); font-size: 0.9rem; margin-bottom: 0.3rem; font-weight: 500;">Client</div>
+          <div id="lightboxLocation" style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 1.5rem;">Location</div>
+          <p id="lightboxDesc" style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">Description</p>
+
+          <div class="exif-group">
+            <div style="font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent-gold); margin-bottom: 0.8rem;">
+              Capture EXIF Telemetry
+            </div>
+            <div class="exif-row">
+              <span class="exif-key">Medium Format Body:</span>
+              <span class="exif-val" id="lightboxExifCamera">-</span>
+            </div>
+            <div class="exif-row">
+              <span class="exif-key">Optics & Lens:</span>
+              <span class="exif-val" id="lightboxExifLens">-</span>
+            </div>
+            <div class="exif-row">
+              <span class="exif-key">Exposure Triad:</span>
+              <span class="exif-val" id="lightboxExifSettings">-</span>
+            </div>
+            <div class="exif-row">
+              <span class="exif-key">Lighting Schema:</span>
+              <span class="exif-val" id="lightboxExifLighting" style="text-align: right; max-width: 200px;">-</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 2rem;">
+          <button id="lightboxBookBtn" class="btn btn-primary" style="width: 100%;">
+            Commission Similar Shoot
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL: VIP CLIENT PROOFING VAULT (PIN: 2026)
+       ======================================================================== -->
+  <div class="client-portal-modal" id="clientPortalModal" role="dialog" aria-modal="true" aria-label="VIP Client Vault">
+    <div class="portal-dialog">
+      <div class="portal-dialog-header">
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold);">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          <span style="font-family: var(--font-serif); font-size: 1.2rem; letter-spacing: 0.05em;">LUMEN VIP VAULT // CLIENT PROOFING</span>
+        </div>
+        <button id="closePortalModal" style="color: var(--text-secondary); font-size: 1.4rem;">✕</button>
+      </div>
+
+      <!-- PIN Challenge Screen -->
+      <div class="portal-pin-screen" id="portalPinScreen">
+        <div class="eyebrow" style="justify-content: center;">Encrypted Gallery Authentication</div>
+        <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 0.5rem;">Enter Your 4-Digit Access PIN</h3>
+        <p style="font-size: 0.85rem; color: var(--text-secondary);">
+          Your private gallery collection was delivered via secure token. Enter your PIN below to review your contact sheets.
+        </p>
+
+        <input type="password" maxlength="4" placeholder="••••" class="pin-input" id="portalPinInput" autofocus>
+        
+        <button class="btn btn-primary" id="portalPinSubmit" style="width: 180px; margin: 0 auto; display: block;">
+          Access Vault
+        </button>
+        <div style="margin-top: 1rem; font-size: 0.78rem; color: var(--accent-gold);">
+          💡 Tip for Demo Evaluators: Use PIN <strong>2026</strong>
+        </div>
+      </div>
+
+      <!-- Private Proofing Gallery Screen -->
+      <div class="portal-gallery-screen" id="portalGalleryScreen">
+        <div class="portal-gallery-toolbar">
+          <div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.4rem;">Collection #804 — Atelier Marais Private Proofs</h3>
+            <span style="font-size: 0.82rem; color: var(--text-muted);">Delivered: October 2026 • 16-Bit RAW Calibrated Proofs</span>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+            <label style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; cursor: pointer;">
+              <input type="checkbox" id="portalWatermarkToggle" checked style="accent-color: var(--accent-gold);">
+              Show Studio Watermark
+            </label>
+            <button id="portalFilterFavBtn" class="btn btn-secondary btn-sm">
+              Favorites Only (<span id="favCounter">2 of 6</span>)
+            </button>
+            <button id="portalDownloadBtn" class="btn btn-primary btn-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Approved (ZIP)
+            </button>
+          </div>
+        </div>
+
+        <div class="proof-grid" id="proofGrid">
+          <!-- Proof cards rendered by client-portal.js -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL: RESERVATION & CONSULTATION INQUIRY
+       ======================================================================== -->
+  <div class="booking-modal" id="bookingModal" role="dialog" aria-modal="true" aria-label="Book Commission">
+    <div class="booking-dialog">
+      <button class="modal-close-btn" id="closeBookingModal" title="Close Inquiry Modal">✕</button>
+      <div class="eyebrow">Studio Reservation</div>
+      <h2 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 0.5rem;">Commission Consultation</h2>
+      <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 2rem;">
+        Reserve your session date or schedule a private creative brief with our principal director.
+      </p>
+
+      <form id="bookingForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="bookName">Your Full Name</label>
+            <input type="text" id="bookName" class="form-input" placeholder="e.g. Eleanor Vance" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bookEmail">Email Address</label>
+            <input type="email" id="bookEmail" class="form-input" placeholder="eleanor@atelier.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="bookingServiceSelect">Commission Discipline</label>
+            <select id="bookingServiceSelect" class="form-select">
+              <option value="Editorial Fashion">Editorial Fashion & Lookbook</option>
+              <option value="Luxury Wedding">Luxury Wedding & Elopement</option>
+              <option value="Commercial Campaign">Commercial Brand & Product</option>
+              <option value="Executive Portraiture">Executive VIP Portraiture</option>
+              <option value="Architectural Space">Architectural & Interior Space</option>
+              <option value="The Atelier Package">The Atelier Package ($2,400)</option>
+              <option value="The Signature Package">The Signature Package ($5,200)</option>
+              <option value="The Sovereign Package">The Sovereign Package ($9,800)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bookDate">Target Shoot Date / Season</label>
+            <input type="date" id="bookDate" class="form-input">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookLocation">Location Preference</label>
+          <div style="display: flex; gap: 1.5rem; margin-top: 0.4rem;">
+            <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; cursor: pointer;">
+              <input type="radio" name="locType" value="tribeca" checked style="accent-color: var(--accent-gold);">
+              Tribeca Daylight Studio (NYC)
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; cursor: pointer;">
+              <input type="radio" name="locType" value="mayfair" style="accent-color: var(--accent-gold);">
+              Mayfair Studio (London)
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; cursor: pointer;">
+              <input type="radio" name="locType" value="destination" style="accent-color: var(--accent-gold);">
+              On-Location / Destination
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookNotes">Creative Concept Brief / Mood Board Links</label>
+          <textarea id="bookNotes" class="form-textarea" rows="4" placeholder="Describe your aesthetic vision, publication scope, wardrobe notes, or share a Pinterest / moodboard link..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+          Submit Commission Inquiry
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Container for dynamically appended toasts -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script type="module" src="scripts/main.js"></script>
+  <script src="scripts/portfolio.js"></script>
+  <script src="scripts/retouch-slider.js"></script>
+  <script src="scripts/calculator.js"></script>
+  <script src="scripts/client-portal.js"></script>
+</body>
+</html>
