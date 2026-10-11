@@ -1,16 +1,15 @@
-# Netlify Configuration for Atelier Aura Luxury Interior Studio
+# Netlify Configuration for Atelier Aura
+# Automatically deploys the "Interior design" subdirectory
 
 [build]
-  publish = "."
-  command = "echo 'Static build ready'"
+  base = "Interior design"
+  publish = "Interior design"
 
-# SPA / Fallback redirects so any route cleanly serves index.html
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-# Security and cache headers
 [[headers]]
   for = "/*"
   [headers.values]
