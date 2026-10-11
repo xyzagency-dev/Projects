@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanguard & Stone | Luxury Real Estate & Architectural Construction</title>
+  <meta name="description" content="Vanguard & Stone unites ultra-luxury residential brokerage, in-house architectural design, and master turnkey construction across Beverly Hills, New York, Miami, and Aspen.">
+  <meta name="keywords" content="luxury real estate, custom home builder, architectural construction, turnkey estates, modern villas, penthouses">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vanguard & Stone | Precision Engineering. Timeless Residences.">
+  <meta property="og:description" content="Bespoke residential construction and off-market luxury acquisitions.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80">
+  
+  <meta name="theme-color" content="#07090e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2307090e'/><polygon points='50,15 85,50 50,85 15,50' fill='none' stroke='%23c5a059' stroke-width='6'/><polygon points='50,30 70,50 50,70 30,50' fill='%23c5a059'/></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="mainHeader">
+    <div class="container nav-wrap">
+      <a href="#" class="brand-logo" aria-label="Vanguard & Stone Home">
+        <div class="brand-symbol"></div>
+        <div class="brand-text">
+          <span class="brand-title">VANGUARD & STONE</span>
+          <span class="brand-subtitle">REAL ESTATE &bull; ARCHITECTURAL BUILD</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#propertiesSection">Residences</a></li>
+          <li class="nav-item"><a href="#constructionSection">Construction & Build</a></li>
+          <li class="nav-item"><a href="#beforeAfterSection">Transformation</a></li>
+          <li class="nav-item"><a href="#calculatorsSection">Estimators</a></li>
+          <li class="nav-item"><a href="#portfolioSection">Portfolio</a></li>
+          <li class="nav-item"><a href="#contactSection">Advisory</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="saved-pill" id="savedPillBtn" title="View Saved Residences">
+          <span>♥ Saved</span>
+          <span class="saved-counter" id="savedCounter">0</span>
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="openBookingModal('VIP Consultation')">
+          Schedule Tour
+        </button>
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-backdrop-glow"></div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="section-tag">Haute Couture Architecture & Prime Brokerage</span>
+            <h1 class="display-title">
+              Where Structural Vision Meets <span class="gold-gradient-text serif-italic">Timeless Living.</span>
+            </h1>
+            <p class="hero-lead">
+              Uniting bespoke residential construction, post-tensioned engineering, and off-market luxury acquisitions under one unified master craft.
+            </p>
+            <div class="hero-btn-group">
+              <a href="#propertiesSection" class="btn btn-primary">
+                Explore Private Residences &rarr;
+              </a>
+              <a href="#calculatorsSection" class="btn btn-secondary">
+                Estimate Custom Build Cost
+              </a>
+            </div>
+
+            <div class="hero-metrics">
+              <div class="metric-item">
+                <div class="metric-num">$1.85B+</div>
+                <div class="metric-label">Portfolio Value</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-num">340+</div>
+                <div class="metric-label">Bespoke Builds</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-num">A+</div>
+                <div class="metric-label">Licensed Builder</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Discovery Card -->
+          <div class="hero-quick-search">
+            <div class="quick-search-tabs">
+              <button class="tab-btn active" type="button">Acquire Residence</button>
+              <button class="tab-btn" type="button" onclick="document.getElementById('calculatorsSection').scrollIntoView({behavior: 'smooth'})">Build Custom Estate</button>
+            </div>
+
+            <form class="quick-search-form" id="heroQuickSearchForm">
+              <div class="form-group-custom">
+                <label for="heroPropertyType">Residence Classification</label>
+                <select id="heroPropertyType" class="form-select">
+                  <option value="">All Luxury Classifications</option>
+                  <option value="villa">Architectural Villa</option>
+                  <option value="penthouse">Sky Penthouse</option>
+                  <option value="waterfront">Deep Waterfront Estate</option>
+                  <option value="estate">Alpine & Desert Compound</option>
+                </select>
+              </div>
+
+              <div class="form-group-custom">
+                <label for="heroLocation">Prime Location</label>
+                <select id="heroLocation" class="form-select">
+                  <option value="">All Global Markets</option>
+                  <option value="beverly-hills">Bel Air & Beverly Hills, CA</option>
+                  <option value="new-york">Tribeca & Manhattan, NY</option>
+                  <option value="miami">Palm Island & Star Island, FL</option>
+                  <option value="aspen">Red Mountain, Aspen, CO</option>
+                </select>
+              </div>
+
+              <div class="form-group-custom">
+                <label for="heroBudget">Investment Bracket</label>
+                <select id="heroBudget" class="form-select">
+                  <option value="">Any Investment Tier</option>
+                  <option value="15-20">$15,000,000 — $20,000,000</option>
+                  <option value="20-30">$20,000,000 — $30,000,000</option>
+                  <option value="30+">$30,000,000+ Trophy Class</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+                Filter Private Portfolio &rarr;
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BRAND TICKER / CREDIBILITY MARQUEE
+         ========================================================================== -->
+    <div class="brand-ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span class="ticker-badge"><span class="ticker-dot"></span> CA GENERAL CONTRACTOR A+ LICENSE #948201</span>
+        <span class="ticker-badge"><span class="ticker-dot"></span> LEED PLATINUM RESIDENTIAL CERTIFIED</span>
+        <span class="ticker-badge"><span class="ticker-dot"></span> ARCHITECTURAL DIGEST FEATURED EST. 2012</span>
+        <span class="ticker-badge"><span class="ticker-dot"></span> RIBA & AIA CHARTERED ARCHITECTS</span>
+        <span class="ticker-badge"><span class="ticker-dot"></span> OFF-MARKET TROPHY PORTFOLIOS</span>
+        <span class="ticker-badge"><span class="ticker-dot"></span> STRUCTURAL POST-TENSIONED ENGINEERING</span>
+        <span class="ticker-badge"><span class="ticker-dot"></span> FL DUAL CONTRACTOR CBC #1263884</span>
+        <span class="ticker-badge"><span class="ticker-dot"></span> 10-YEAR STRUCTURAL INTEGRITY WARRANTY</span>
+        <!-- Duplicated for seamless loop -->
+        <span class="ticker-badge"><span class="ticker-dot"></span> CA GENERAL CONTRACTOR A+ LICENSE #948201</span>
+        <span class="ticker-badge"><span class="ticker-dot"></span> LEED PLATINUM RESIDENTIAL CERTIFIED</span>
+        <span class="ticker-badge"><span class="ticker-dot"></span> ARCHITECTURAL DIGEST FEATURED EST. 2012</span>
+        <span class="ticker-badge"><span class="ticker-dot"></span> RIBA & AIA CHARTERED ARCHITECTS</span>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         CURATED RESIDENCES (REAL ESTATE DIVISION)
+         ========================================================================== -->
+    <section class="section-padding" id="propertiesSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Prime Real Estate Division</span>
+          <h2 class="display-title">Curated Architectural Residences</h2>
+          <p>
+            An exclusive gallery of trophy estates, sky penthouses, and private compounds designed and verified to museum-grade standards.
+          </p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="properties-controls">
+          <div class="filter-categories">
+            <button class="filter-chip active" data-cat="all">All Residences</button>
+            <button class="filter-chip" data-cat="villa">Villas</button>
+            <button class="filter-chip" data-cat="penthouse">Penthouses</button>
+            <button class="filter-chip" data-cat="waterfront">Waterfront</button>
+            <button class="filter-chip" data-cat="estate">Compounds</button>
+          </div>
+
+          <div class="filter-aux">
+            <div class="search-input-wrap">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="propertySearchInput" placeholder="Search by city, architect, pool...">
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Grid Container -->
+        <div class="properties-grid" id="propertiesGrid">
+          <!-- Populated dynamically via js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HOME & CONSTRUCTION DIVISION
+         ========================================================================== -->
+    <section class="section-padding construction-section" id="constructionSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Master Home & Construction Division</span>
+          <h2 class="display-title">Engineering The Exceptional</h2>
+          <p>
+            Unlike traditional brokerages, we operate our own licensed master building firm and architectural studio. We handle every cubic foot of soil, every structural steel I-beam, and every hand-cut marble slab.
+          </p>
+        </div>
+
+        <div class="construction-services-grid">
+          <div class="service-card">
+            <div class="service-icon-box">🏛️</div>
+            <h3>Turnkey Luxury Construction</h3>
+            <div class="service-subtitle">Ground-Up Bespoke Estates</div>
+            <p>From complex hillside grading to 40-foot cantilevered post-tensioned slabs. Master general contracting with fixed-price transparency.</p>
+            <ul class="service-bullets">
+              <li>Licensed General Contractor A+ in CA, NY, FL, CO</li>
+              <li>Dedicated On-Site Director & Daily 4K Drone Reports</li>
+              <li>Structural steel & precision reinforced concrete</li>
+              <li>10-Year Comprehensive Structural Handover Warranty</li>
+            </ul>
+            <div class="service-meta-lead">
+              <span>Delivery Timeline</span>
+              <strong style="color: var(--gold-400);">14 – 22 Months</strong>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-box">📐</div>
+            <h3>Architectural & 3D BIM</h3>
+            <div class="service-subtitle">Visionary Forms Meeting Physics</div>
+            <p>In-house licensed architects collaborate with geotechnical and MEP engineers to produce buildable, code-compliant, breathtaking blueprints.</p>
+            <ul class="service-bullets">
+              <li>Complete 3D BIM modeling & Immersive VR Tours</li>
+              <li>Permitting, zoning variances & coastal approvals</li>
+              <li>Passive house thermal & acoustic engineering</li>
+              <li>Custom glass curtain walls & thermal barriers</li>
+            </ul>
+            <div class="service-meta-lead">
+              <span>Planning Cycle</span>
+              <strong style="color: var(--gold-400);">3 – 6 Months</strong>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-box">🔨</div>
+            <h3>Haute Gut Renovations</h3>
+            <div class="service-subtitle">Transforming Prime Historical Assets</div>
+            <p>Preserving irreplaceable character while re-engineering structural floor plates, MEP infrastructure, and acoustic isolation.</p>
+            <ul class="service-bullets">
+              <li>Full MEP (Mechanical, Electrical, Plumbing) redesign</li>
+              <li>Structural load-bearing demolition & steel retrofit</li>
+              <li>Custom Italian joinery & book-matched marble slabs</li>
+              <li>Historic landmark preservation approvals</li>
+            </ul>
+            <div class="service-meta-lead">
+              <span>Renovation Phase</span>
+              <strong style="color: var(--gold-400);">6 – 14 Months</strong>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-box">🌱</div>
+            <h3>Sustainable & Off-Grid Tech</h3>
+            <div class="service-subtitle">LEED Platinum & Net-Zero Luxury</div>
+            <p>Pioneering eco-luxe engineering: geothermal heating/cooling, micro-grid solar battery vaults, and surgical hospital-grade air purification.</p>
+            <ul class="service-bullets">
+              <li>Tesla Megapack & solar roof micro-grid integration</li>
+              <li>Airtight passive thermal insulation envelopes</li>
+              <li>Hospital-grade HEPA & UV air filtration</li>
+              <li>Smart micro-climate automated climate zoning</li>
+            </ul>
+            <div class="service-meta-lead">
+              <span>Standard</span>
+              <strong style="color: var(--gold-400);">LEED Platinum</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Before & After Transformation Slider -->
+        <div id="beforeAfterSection">
+          <div class="section-header" style="margin-bottom: 32px;">
+            <span class="section-tag">Interactive Structural Reveal</span>
+            <h3 class="display-title" style="font-size: 2rem;">From Structural Skeleton To Masterpiece</h3>
+            <p>Drag the slider below to inspect the transformation of our Bel Air project from raw structural framing to completed architectural marvel.</p>
+          </div>
+
+          <div class="before-after-container">
+            <div class="comparison-slider-wrapper">
+              <!-- After (Background) -->
+              <img class="comparison-img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Completed Luxury Estate">
+              
+              <!-- Before (Foreground Clipped) -->
+              <div class="comparison-before-wrap">
+                <img src="https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=1200&q=80" alt="Structural Construction Phase">
+              </div>
+
+              <!-- Handle -->
+              <div class="comparison-handle">⇄</div>
+
+              <div class="slider-label label-before">Under Construction</div>
+              <div class="slider-label label-after">Turnkey Handover</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Construction Process Roadmap -->
+        <div class="section-header" style="margin-bottom: 24px;">
+          <span class="section-tag">The Vanguard Methodology</span>
+          <h3 class="display-title" style="font-size: 2rem;">The 5-Phase Delivery Protocol</h3>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="process-step-num">01</div>
+            <h4>Site Feasibility & Soil</h4>
+            <p>Geotechnical boreholes, topographic lidar scans, and zoning entitlement analysis to guarantee build viability.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">02</div>
+            <h4>3D BIM & Permitting</h4>
+            <p>Precision architectural drafting, structural stress simulation, and expedited municipality approvals.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">03</div>
+            <h4>Foundation & Shell</h4>
+            <p>Drilled caissons, post-tensioned slabs, and structural steel framing erected by our dedicated teams.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">04</div>
+            <h4>Artisanal Finishes</h4>
+            <p>Book-matched marble slabs, acoustic dampening, millwork crafted in Copenhagen, and smart automation.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">05</div>
+            <h4>Handover & Warranty</h4>
+            <p>White-glove commissioning, digital smart manual, and our 10-year comprehensive structural warranty.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE ESTIMATORS & FINANCIAL TOOLS
+         ========================================================================== -->
+    <section class="section-padding calculators-section" id="calculatorsSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Proprietary Analytical Engines</span>
+          <h2 class="display-title">Real Estate & Construction Financial Models</h2>
+          <p>
+            Whether planning a ground-up architectural build or acquiring a trophy residence, model your investment timeline and capital requirements in real-time.
+          </p>
+        </div>
+
+        <div class="calculator-tabs-header">
+          <button class="calc-tab-trigger active" data-tab="construction" onclick="switchCalcTab('construction')">
+            🏗️ Construction Feasibility Estimator
+          </button>
+          <button class="calc-tab-trigger" data-tab="mortgage" onclick="switchCalcTab('mortgage')">
+            🏦 Luxury Financing & Mortgage ROI
+          </button>
+        </div>
+
+        <!-- Panel 1: Construction Estimator -->
+        <div class="calc-panel active" id="calcPanel-construction">
+          <div class="calculator-card">
+            <div class="calc-inputs-col">
+              <!-- Project Type -->
+              <div class="calc-control-group">
+                <label class="calc-control-label">
+                  <span>1. Project Scope & Architecture</span>
+                </label>
+                <div class="calc-select-grid">
+                  <div class="option-box type-option-box selected" data-type="ground-up">
+                    <span class="option-title">Ground-Up Build</span>
+                    <span class="option-desc">Complete new luxury estate</span>
+                  </div>
+                  <div class="option-box type-option-box" data-type="renovation">
+                    <span class="option-title">Gut Renovation</span>
+                    <span class="option-desc">Full structural overhaul</span>
+                  </div>
+                  <div class="option-box type-option-box" data-type="pavilion">
+                    <span class="option-title">Architectural Pavilion</span>
+                    <span class="option-desc">Cantilevered compound</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Area Slider -->
+              <div class="calc-control-group">
+                <div class="calc-control-label">
+                  <span>2. Total Interior Footprint</span>
+                  <span class="calc-badge-val" id="estimatorSqftVal">7,500 sq.ft</span>
+                </div>
+                <input type="range" id="estimatorSqft" class="range-slider-styled" min="2500" max="25000" step="250" value="7500">
+                <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted);">
+                  <span>2,500 sq.ft</span>
+                  <span>12,500 sq.ft</span>
+                  <span>25,000 sq.ft</span>
+                </div>
+              </div>
+
+              <!-- Finish Tier -->
+              <div class="calc-control-group">
+                <label class="calc-control-label">
+                  <span>3. Finishing & Engineering Tier</span>
+                </label>
+                <div class="calc-select-grid">
+                  <div class="option-box finish-option-box" data-tier="signature">
+                    <span class="option-title">Signature Luxury</span>
+                    <span class="option-desc">Premium architectural spec</span>
+                  </div>
+                  <div class="option-box finish-option-box selected" data-tier="ultra">
+                    <span class="option-title">Ultra-Prestige</span>
+                    <span class="option-desc">Custom imported marbles & steel</span>
+                  </div>
+                  <div class="option-box finish-option-box" data-tier="netzero">
+                    <span class="option-title">Net-Zero Eco-Luxe</span>
+                    <span class="option-desc">Passive house & micro-grid</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Results Output -->
+            <div class="calc-results-col">
+              <div>
+                <div class="results-header-tag">Estimated Turnkey Investment</div>
+                <div class="result-hero-amount" id="estimatorTotalDisplay">$7,125,000</div>
+
+                <div class="breakdown-list">
+                  <div class="breakdown-row">
+                    <span>Structural Shell & Foundations:</span>
+                    <span id="costStructural">$2,992,500</span>
+                  </div>
+                  <div class="breakdown-row">
+                    <span>Artisanal Finishes & Millwork:</span>
+                    <span id="costFinishes">$2,707,500</span>
+                  </div>
+                  <div class="breakdown-row">
+                    <span>Engineering, MEP & Architecture:</span>
+                    <span id="costMep">$1,425,000</span>
+                  </div>
+                  <div class="breakdown-row">
+                    <span>Estimated Construction Rate:</span>
+                    <span id="estimatorRatePerSqft">$950 / sq.ft</span>
+                  </div>
+                  <div class="breakdown-row">
+                    <span>Projected Completion Horizon:</span>
+                    <span id="estimatorTimeline" style="color: var(--gold-400);">16 – 19 Months</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button class="btn btn-primary" style="width: 100%; margin-bottom: 12px;" onclick="exportEstimatorPdf()">
+                  Download Full Feasibility Report (PDF)
+                </button>
+                <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center;">
+                  *Calculations based on actual 2025/2026 Vanguard & Stone cost benchmarking across CA, NY & FL.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Mortgage & Investment Calculator -->
+        <div class="calc-panel" id="calcPanel-mortgage">
+          <div class="calculator-card">
+            <div class="calc-inputs-col">
+              <!-- Home Price -->
+              <div class="calc-control-group">
+                <div class="calc-control-label">
+                  <span>Residence Acquisition Price</span>
+                  <span class="calc-badge-val" id="mortgagePriceVal">$22,800,000</span>
+                </div>
+                <input type="range" id="mortgagePrice" class="range-slider-styled" min="5000000" max="60000000" step="500000" value="22800000">
+                <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted);">
+                  <span>$5M</span>
+                  <span>$30M</span>
+                  <span>$60M</span>
+                </div>
+              </div>
+
+              <!-- Down Payment -->
+              <div class="calc-control-group">
+                <div class="calc-control-label">
+                  <span>Down Payment %</span>
+                  <span class="calc-badge-val" id="mortgageDownVal">25% ($5,700,000)</span>
+                </div>
+                <input type="range" id="mortgageDown" class="range-slider-styled" min="10" max="50" step="5" value="25">
+              </div>
+
+              <!-- Interest Rate -->
+              <div class="calc-control-group">
+                <div class="calc-control-label">
+                  <span>Interest Rate (Jumbo Luxury Loan)</span>
+                  <span class="calc-badge-val" id="mortgageRateVal">6.20%</span>
+                </div>
+                <input type="range" id="mortgageRate" class="range-slider-styled" min="4.0" max="9.0" step="0.1" value="6.2">
+              </div>
+
+              <!-- Term -->
+              <div class="calc-control-group">
+                <label class="calc-control-label"><span>Loan Term</span></label>
+                <select id="mortgageTerm" class="form-select">
+                  <option value="30">30 Years Fixed</option>
+                  <option value="15">15 Years Fixed</option>
+                  <option value="10">10/1 ARM Interest-Only</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Mortgage Results -->
+            <div class="calc-results-col">
+              <div>
+                <div class="results-header-tag">Total Estimated Monthly Investment</div>
+                <div class="result-hero-amount" id="mortgageMonthlyTotal">$133,142/mo</div>
+
+                <div class="breakdown-list">
+                  <div class="breakdown-row">
+                    <span>Principal & Interest:</span>
+                    <span id="mortgagePI">$104,635</span>
+                  </div>
+                  <div class="breakdown-row">
+                    <span>Est. Property Tax (1.15%):</span>
+                    <span id="mortgageTax">$21,850</span>
+                  </div>
+                  <div class="breakdown-row">
+                    <span>Est. Luxury Hazard Insurance:</span>
+                    <span id="mortgageIns">$6,650</span>
+                  </div>
+                  <div class="breakdown-row">
+                    <span>Total Financed Amount:</span>
+                    <span id="mortgageLoanAmount">$17,100,000</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button class="btn btn-primary" style="width: 100%; margin-bottom: 12px;" onclick="openBookingModal('Private Banking Advisory')">
+                  Consult Vanguard Private Wealth Desk
+                </button>
+                <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center;">
+                  Direct introductions to top-tier private banks & family office lenders.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PORTFOLIO & CASE STUDIES
+         ========================================================================== -->
+    <section class="section-padding" id="portfolioSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Proven Track Record</span>
+          <h2 class="display-title">Signature Construction Case Studies</h2>
+          <p>
+            Each structure represents thousands of engineering hours, custom material acquisitions, and uncompromising craftsmanship delivered on schedule.
+          </p>
+        </div>
+
+        <div class="portfolio-slider-wrap">
+          <div class="case-study-card">
+            <div class="case-study-img-wrap">
+              <img src="https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=1200&q=80" alt="The Brentwood Cantilever House">
+              <span class="case-study-tag">Ground-Up Build</span>
+            </div>
+            <div class="case-study-body">
+              <h3 class="case-study-title">The Brentwood Cantilever House</h3>
+              <p class="case-study-loc">Brentwood, Los Angeles &bull; 12,400 sq.ft</p>
+              <div class="case-study-stats">
+                <span>⏱ Timeline: 18 Mos</span>
+                <span>🏆 Completed: 2024</span>
+              </div>
+              <p class="case-study-quote">
+                "Vanguard delivered 2 weeks ahead of our targeted schedule. The cast concrete finishing is museum caliber."
+              </p>
+            </div>
+          </div>
+
+          <div class="case-study-card">
+            <div class="case-study-img-wrap">
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80" alt="SoHo Cast-Iron Penthouse Conversion">
+              <span class="case-study-tag">Historic Renovation</span>
+            </div>
+            <div class="case-study-body">
+              <h3 class="case-study-title">SoHo Cast-Iron Sky Villa</h3>
+              <p class="case-study-loc">Greene St, Manhattan &bull; 6,800 sq.ft</p>
+              <div class="case-study-stats">
+                <span>⏱ Timeline: 12 Mos</span>
+                <span>🏆 Completed: 2023</span>
+              </div>
+              <p class="case-study-quote">
+                "Flawless integration of 1890s Corinthian iron columns with minimalist Italian glass and steel."
+              </p>
+            </div>
+          </div>
+
+          <div class="case-study-card">
+            <div class="case-study-img-wrap">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" alt="Star Island Coastal Modern Pavilion">
+              <span class="case-study-tag">Marine Structural</span>
+            </div>
+            <div class="case-study-body">
+              <h3 class="case-study-title">Star Island Coastal Pavilion</h3>
+              <p class="case-study-loc">Star Island, Miami &bull; 15,200 sq.ft</p>
+              <div class="case-study-stats">
+                <span>⏱ Timeline: 21 Mos</span>
+                <span>🏆 Completed: 2024</span>
+              </div>
+              <p class="case-study-quote">
+                "Surpassed Category 5 hurricane resistance standards while looking like a floating diamond box."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TESTIMONIALS & FAMILY OFFICES
+         ========================================================================== -->
+    <section class="section-padding testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Private Client Trust</span>
+          <h2 class="display-title">Endorsements From Notable Clients</h2>
+          <p>Read why technology founders, institutional investors, and discerning families entrust Vanguard & Stone with their signature properties.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="rating-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Building our dream estate with Vanguard & Stone was seamless. Having both elite real estate brokerage and master construction under one roof saved us over a year of coordination headaches and millions in misaligned planning."
+            </p>
+            <div class="testimonial-author-wrap">
+              <div class="author-meta">
+                <h5>Harrison Sterling</h5>
+                <p>Managing Partner, Sterling Global Capital &bull; Bel Air</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="rating-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "The craftsmanship in our Tribeca penthouse is simply unmatched. Their structural team resolved historic landmark challenges in record time. We sold for 42% above market comps thanks to their architectural pedigree."
+            </p>
+            <div class="testimonial-author-wrap">
+              <div class="author-meta">
+                <h5>Elena Rostova</h5>
+                <p>Art Collector & Tech Founder &bull; Manhattan</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="rating-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "From acquiring the off-market waterfront parcel to handing over the smart keys to our net-zero solar mansion, Vanguard & Stone operated with the precision of a Swiss horologist."
+            </p>
+            <div class="testimonial-author-wrap">
+              <div class="author-meta">
+                <h5>Marcus & Vivienne Vance</h5>
+                <p>Private Family Office &bull; Miami Beach</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VIP ADVISORY & CONTACT SECTION
+         ========================================================================== -->
+    <section class="section-padding contact-section" id="contactSection">
+      <div class="container">
+        <div class="contact-card-wrapper">
+          <div class="contact-sidebar">
+            <div>
+              <span class="section-tag">Direct Partner Access</span>
+              <h3>Initiate A Confidential Dialogue</h3>
+              <p>
+                Connect with our senior partners regarding off-market property acquisitions, site feasibility appraisals, or ground-up construction commissions.
+              </p>
+
+              <div class="contact-detail-items">
+                <div class="detail-item">
+                  <div class="detail-icon">📞</div>
+                  <div class="detail-text">
+                    <h6>Concierge Telephone</h6>
+                    <p>+1 (800) 849-2863</p>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon">✉️</div>
+                  <div class="detail-text">
+                    <h6>Private Inquiry Desk</h6>
+                    <p>concierge@vanguardstone.com</p>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon">📍</div>
+                  <div class="detail-text">
+                    <h6>Executive Headquarters</h6>
+                    <p>9450 Wilshire Blvd, Beverly Hills, CA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem; color: var(--text-muted);">
+              Non-Disclosure Agreements (NDA) honored for all confidential estates and family office acquisitions.
+            </div>
+          </div>
+
+          <div class="contact-form-body">
+            <form id="mainConsultForm">
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label for="contactName">Full Legal Name *</label>
+                  <input type="text" id="contactName" placeholder="e.g. Lord Alistair Vance" required>
+                </div>
+                <div class="form-field">
+                  <label for="contactEmail">Email Address *</label>
+                  <input type="email" id="contactEmail" placeholder="e.g. alistair@vanceholdings.com" required>
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label for="contactPhone">Phone / WhatsApp</label>
+                  <input type="tel" id="contactPhone" placeholder="+1 (310) 000-0000">
+                </div>
+                <div class="form-field">
+                  <label for="contactInterest">Primary Objective *</label>
+                  <select id="contactInterest" required>
+                    <option value="Acquire Luxury Residence">Acquire Luxury Residence</option>
+                    <option value="Ground-Up Custom Construction">Ground-Up Custom Construction</option>
+                    <option value="Historic Gut Renovation">Historic Gut Renovation</option>
+                    <option value="List Trophy Property (Exclusive)">List Trophy Property (Exclusive)</option>
+                    <option value="Family Office Architectural Advisory">Family Office Architectural Advisory</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="contactBudget">Anticipated Investment Budget</label>
+                <select id="contactBudget">
+                  <option value="$10M - $20M">$10,000,000 – $20,000,000</option>
+                  <option value="$20M - $40M">$20,000,000 – $40,000,000</option>
+                  <option value="$40M+">$40,000,000+ Trophy Allocation</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="contactMessage">Project Details or Residence Requirements</label>
+                <textarea id="contactMessage" placeholder="Specify location preferences, acreage, architectural styles (e.g. modern cantilever, Mediterranean revival, timber modernism)..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Submit Private Inquiry &rarr;
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="brand-symbol"></div>
+            <div class="brand-text">
+              <span class="brand-title">VANGUARD & STONE</span>
+              <span class="brand-subtitle">HOMES & CONSTRUCTION</span>
+            </div>
+          </div>
+          <p>
+            An integrated architectural atelier and luxury real estate brokerage delivering museum-grade residential engineering and off-market trophy portfolios globally.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Prime Hubs</h5>
+          <ul class="footer-links">
+            <li><a href="#propertiesSection">Beverly Hills & Bel Air</a></li>
+            <li><a href="#propertiesSection">Tribeca & Manhattan</a></li>
+            <li><a href="#propertiesSection">Palm Island & Miami</a></li>
+            <li><a href="#propertiesSection">Red Mountain & Aspen</a></li>
+            <li><a href="#propertiesSection">Zurich & Swiss Alps</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Engineering</h5>
+          <ul class="footer-links">
+            <li><a href="#constructionSection">Turnkey General Contracting</a></li>
+            <li><a href="#constructionSection">3D BIM & Architectural Modeling</a></li>
+            <li><a href="#constructionSection">Haute Gut Renovations</a></li>
+            <li><a href="#constructionSection">Net-Zero Microgrid Systems</a></li>
+            <li><a href="#calculatorsSection">Construction Cost Estimator</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>The Journal</h5>
+          <p style="font-size: 0.85rem; margin-bottom: 12px;">Subscribe to receive our private quarterly dossier on luxury property trades and architectural engineering.</p>
+          <form class="newsletter-box" id="newsletterForm">
+            <input type="email" placeholder="Your private email..." required>
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Vanguard & Stone Group. All rights reserved. CA Lic #948201 | FL CBC #1263884 | NY DCA #2094182.
+        </div>
+        <div style="display: flex; gap: 24px;">
+          <a href="#">Privacy Protocol</a>
+          <a href="#">Equal Housing Opportunity</a>
+          <a href="#">Terms of Advisory</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS & SLIDE-OUT DRAWERS
+       ========================================================================== -->
+
+  <!-- Property Quick View Modal -->
+  <div class="modal-backdrop" id="propertyDetailModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" onclick="closeModal('propertyDetailModal')">&times;</button>
+      <div id="propertyDetailContent" style="padding: 30px;">
+        <!-- Injected via js/app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- VIP Booking Modal -->
+  <div class="modal-backdrop" id="bookingModal">
+    <div class="modal-container" style="max-width: 580px;">
+      <button class="modal-close-btn" onclick="closeModal('bookingModal')">&times;</button>
+      <div style="padding: 40px;">
+        <span class="section-tag">Exclusive Appointment</span>
+        <h3 class="display-title" style="font-size: 1.8rem; margin-bottom: 8px;">Schedule VIP Consultation</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 24px;">
+          Private viewings arranged with armed security escorts & senior architectural advisors.
+        </p>
+
+        <form id="vipBookingForm">
+          <input type="hidden" id="bookingSubject" value="General VIP Tour">
+          
+          <div class="form-field">
+            <label for="bookName">Full Name *</label>
+            <input type="text" id="bookName" placeholder="Client legal name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="bookEmail">Email Address *</label>
+            <input type="email" id="bookEmail" placeholder="client@domain.com" required>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-field">
+              <label for="bookDate">Preferred Date *</label>
+              <input type="date" id="bookDate" required>
+            </div>
+            <div class="form-field">
+              <label for="bookTime">Time Window</label>
+              <select id="bookTime">
+                <option value="Morning (10:00 AM - 1:00 PM)">Morning (10:00 AM - 1:00 PM)</option>
+                <option value="Afternoon (1:00 PM - 4:00 PM)">Afternoon (1:00 PM - 4:00 PM)</option>
+                <option value="Sunset / Twilight (5:00 PM - 7:30 PM)">Sunset / Twilight (5:00 PM)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="bookNotes">Special Security or Aircraft Coordination Notes</label>
+            <textarea id="bookNotes" placeholder="Private hangar coordination, dietary requests, NDA requirement..." style="min-height: 80px;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+            Confirm VIP Appointment &rarr;
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comparison Drawer -->
+  <div class="comparison-drawer" id="comparisonDrawer">
+    <div class="container">
+      <div class="drawer-header">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <h5 style="color: #fff; font-family: var(--font-display); font-size: 1.1rem; margin: 0;">
+            ⚖️ Side-by-Side Residence Comparison
+          </h5>
+          <span style="font-size: 0.8rem; color: var(--gold-400);">Select up to 3 residences to compare metrics</span>
+        </div>
+        <button class="btn btn-sm btn-secondary" onclick="closeComparisonDrawer()">Close Drawer &times;</button>
+      </div>
+
+      <div class="drawer-items-grid" id="drawerItemsContainer">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
