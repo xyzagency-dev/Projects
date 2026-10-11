@@ -2,7 +2,8 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+const PUBLIC_DIR = __dirname;
 const MIME_TYPES = {
   '.html': 'text/html; charset=UTF-8',
   '.css': 'text/css; charset=UTF-8',
@@ -18,9 +19,9 @@ const MIME_TYPES = {
 
 const server = http.createServer((req, res) => {
   let cleanUrl = req.url.split('?')[0];
-  if (cleanUrl === '/') cleanUrl = '/index.html';
+  if (cleanUrl === '/' || cleanUrl === '') cleanUrl = '/index.html';
 
-  const filePath = path.join(__dirname, cleanUrl);
+  const filePath = path.join(PUBLIC_DIR, cleanUrl);
   const ext = path.extname(filePath).toLowerCase();
   const contentType = MIME_TYPES[ext] || 'application/octet-stream';
 
@@ -41,5 +42,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`Lumen Studio Server running at http://localhost:${PORT}`);
+  console.log(`Lumen Photo Studio Server running at http://localhost:${PORT}`);
 });

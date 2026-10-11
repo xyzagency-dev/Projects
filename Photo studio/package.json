@@ -1,0 +1,19 @@
+{
+  "name": "photo-studio",
+  "version": "1.0.0",
+  "description": "LUMEN & CO. Fine Art & Commercial Photography Studio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "photography",
+    "studio",
+    "editorial",
+    "luxury",
+    "netlify"
+  ],
+  "author": "Lumen & Co.",
+  "license": "ISC"
+}
