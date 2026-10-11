@@ -1,0 +1,95 @@
+/* ==========================================================================
+   NEXUS ARENA — DESIGN SYSTEM & TOKENS
+   ========================================================================== */
+
+:root {
+  /* Brand Accents (Default: Cyberpunk Neon Cyan & Hyper-Violet) */
+  --primary: #00f0ff;
+  --primary-rgb: 0, 240, 255;
+  --primary-glow: rgba(0, 240, 255, 0.45);
+  
+  --secondary: #9d4edd;
+  --secondary-rgb: 157, 78, 221;
+  --secondary-glow: rgba(157, 78, 221, 0.45);
+
+  --accent-pink: #ff2a85;
+  --accent-gold: #ffd166;
+  --accent-emerald: #10f19a;
+  --accent-red: #ff3366;
+
+  /* Surfaces & Backgrounds */
+  --bg-deep: #05070c;
+  --bg-main: #090c15;
+  --bg-card: rgba(14, 20, 36, 0.78);
+  --bg-card-hover: rgba(22, 32, 58, 0.88);
+  --bg-glass: rgba(10, 16, 30, 0.72);
+  --bg-glass-heavy: rgba(8, 12, 22, 0.92);
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-light: rgba(255, 255, 255, 0.15);
+  --border-glow: rgba(var(--primary-rgb), 0.35);
+  --border-active: var(--primary);
+
+  /* Typography */
+  --font-heading: 'Orbitron', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Text Colors */
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --text-inverse: #05070c;
+
+  /* Radii & Shadows */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 28px rgba(0, 0, 0, 0.6);
+  --shadow-neon: 0 0 25px var(--primary-glow);
+  --shadow-neon-purple: 0 0 25px var(--secondary-glow);
+
+  /* Transitions */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout */
+  --max-width: 1320px;
+  --nav-height: 80px;
+}
+
+/* Theme Variation: Apex Gold (Franchise Switcher) */
+[data-theme="gold"] {
+  --primary: #ffd166;
+  --primary-rgb: 255, 209, 102;
+  --primary-glow: rgba(255, 209, 102, 0.4);
+  --secondary: #ff8c42;
+  --secondary-rgb: 255, 140, 66;
+  --secondary-glow: rgba(255, 140, 66, 0.4);
+}
+
+/* Theme Variation: Matrix Emerald */
+[data-theme="emerald"] {
+  --primary: #10f19a;
+  --primary-rgb: 16, 241, 154;
+  --primary-glow: rgba(16, 241, 154, 0.4);
+  --secondary: #00b4d8;
+  --secondary-rgb: 0, 180, 216;
+  --secondary-glow: rgba(0, 180, 216, 0.4);
+}
+
+/* Theme Variation: Crimson Stealth */
+[data-theme="crimson"] {
+  --primary: #ff3366;
+  --primary-rgb: 255, 51, 102;
+  --primary-glow: rgba(255, 51, 102, 0.45);
+  --secondary: #bd00ff;
+  --secondary-rgb: 189, 0, 255;
+  --secondary-glow: rgba(189, 0, 255, 0.4);
+}

@@ -1,0 +1,14 @@
+# System and OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & Environment
+*.log
+.env
+.env.local
+
+# IDE & Editor
+.vscode/
+.idea/
+.agents/
