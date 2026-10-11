@@ -1,0 +1,166 @@
+[
+  {
+    "id": "tribeca-penthouse",
+    "title": "The Tribeca Glasshouse Penthouse",
+    "category": "penthouse",
+    "categoryLabel": "Penthouse Renovation",
+    "location": "Tribeca, New York",
+    "area": "6,400 sq. ft.",
+    "year": "2025",
+    "budget": "$3.8M",
+    "duration": "14 Months",
+    "leadArchitect": "Elena Rostova & Atelier Team",
+    "coverImage": "assets/images/hero-penthouse.jpg",
+    "gallery": [
+      "assets/images/hero-penthouse.jpg",
+      "assets/images/bespoke-kitchen.jpg",
+      "assets/images/luxury-bath.jpg"
+    ],
+    "description": "A complete architectural gut and structural reimagining of a historic duplex penthouse. Featuring double-height travertine fireplace monolithic walls, custom curved bouclé millwork, and seamless indoor-outdoor terrace integration with bespoke bronze glazing.",
+    "scope": [
+      "Complete structural gut & floor reinforcement",
+      "Floor-to-ceiling thermal bronze curtain wall",
+      "Travertine monolithic fireplace engineering",
+      "Bespoke Italian smoked oak millwork",
+      "Acoustic isolation & smart Lutron automation"
+    ],
+    "materials": ["Navona Travertine", "Smoked American Oak", "Brushed Champagne Brass", "Calacatta Viola"],
+    "testimonial": "“Atelier Aura turned an overwhelming penthouse overhaul into an effortless, transparent masterclass in construction and haute design.” — M. Sterling, Owner"
+  },
+  {
+    "id": "bel-air-villa",
+    "title": "Bel-Air Architectural Sanctuary",
+    "category": "construction",
+    "categoryLabel": "Ground-Up Construction",
+    "location": "Bel-Air, California",
+    "area": "11,200 sq. ft.",
+    "year": "2024",
+    "budget": "$8.4M",
+    "duration": "22 Months",
+    "leadArchitect": "Julian Vance, AIA",
+    "coverImage": "assets/images/villa-architecture.jpg",
+    "gallery": [
+      "assets/images/villa-architecture.jpg",
+      "assets/images/renovation-after.jpg",
+      "assets/images/construction-craft.jpg"
+    ],
+    "description": "Ground-up architectural construction merging raw board-formed architectural concrete, warm western red cedar overhangs, and cantilevered living pavilions overlooking the Pacific horizon.",
+    "scope": [
+      "Hillside structural caissons & seismic engineering",
+      "Board-formed architectural concrete casting",
+      "Zero-edge architectural reflection pool",
+      "Geothermal climate control & solar integration",
+      "Custom integrated architectural lighting"
+    ],
+    "materials": ["Board-Formed Concrete", "Western Red Cedar", "Thermal Low-E Glass", "Basalt Stone"],
+    "testimonial": "“The level of structural precision and site supervision was unparalleled. Delivered on schedule with zero compromise.” — D. K., Principal"
+  },
+  {
+    "id": "kensington-manor",
+    "title": "Kensington Private Kitchen & Suite",
+    "category": "residential",
+    "categoryLabel": "Bespoke Residential",
+    "location": "Kensington, London",
+    "area": "3,850 sq. ft.",
+    "year": "2025",
+    "budget": "$1.9M",
+    "duration": "9 Months",
+    "leadArchitect": "Sophia Chen, RIBA",
+    "coverImage": "assets/images/bespoke-kitchen.jpg",
+    "gallery": [
+      "assets/images/bespoke-kitchen.jpg",
+      "assets/images/material-marble.jpg",
+      "assets/images/renovation-after.jpg"
+    ],
+    "description": "Haute culinary architecture featuring a monolithic 4.2-meter Calacatta Viola island, concealed fluted walnut joinery, integrated Gaggenau 400 series appliances, and handcrafted lime plaster walls.",
+    "scope": [
+      "Load-bearing wall removal & steel beam placement",
+      "Monolithic stone island bookmatching",
+      "Bespoke fluted acoustic millwork",
+      "Zoned recessed architectural cove lighting"
+    ],
+    "materials": ["Calacatta Viola", "Fluted Smoked Walnut", "Brushed Brass", "Hand-troweled Limewash"],
+    "testimonial": "“A kitchen that feels like an art gallery yet functions like a Michelin-starred workstation.” — Lord & Lady H."
+  },
+  {
+    "id": "soho-creative-studio",
+    "title": "SoHo Flagship Creative Studio",
+    "category": "commercial",
+    "categoryLabel": "Commercial & Hospitality",
+    "location": "SoHo, New York",
+    "area": "5,200 sq. ft.",
+    "year": "2024",
+    "budget": "$2.2M",
+    "duration": "7 Months",
+    "leadArchitect": "Marcus Dupont",
+    "coverImage": "assets/images/commercial-space.jpg",
+    "gallery": [
+      "assets/images/commercial-space.jpg",
+      "assets/images/architectural-plan.jpg",
+      "assets/images/material-concrete.jpg"
+    ],
+    "description": "Adaptive reuse of a cast-iron historic loft into a multi-disciplinary design atelier. Microcement continuous flooring, minimalist black steel partitions, and acoustically damped client presentation suites.",
+    "scope": [
+      "Historic landmark preservation approvals",
+      "Complete MEP overhaul & acoustic engineering",
+      "Custom monolithic terrazzo conference surfaces",
+      "Bespoke fluted glass spatial dividers"
+    ],
+    "materials": ["Microcement", "Industrial Black Steel", "Reclaimed Heart Pine", "Acoustic Felt"],
+    "testimonial": "“Our team and high-profile clients are in awe every single day. The space elevated our brand instantly.” — Agency CEO"
+  },
+  {
+    "id": "cotswolds-estate-bath",
+    "title": "Cotswolds Spa Pavilion & Bath",
+    "category": "residential",
+    "categoryLabel": "Bespoke Residential",
+    "location": "The Cotswolds, UK",
+    "area": "2,400 sq. ft.",
+    "year": "2025",
+    "budget": "$1.1M",
+    "duration": "6 Months",
+    "leadArchitect": "Sophia Chen, RIBA",
+    "coverImage": "assets/images/luxury-bath.jpg",
+    "gallery": [
+      "assets/images/luxury-bath.jpg",
+      "assets/images/material-brass.jpg",
+      "assets/images/renovation-after.jpg"
+    ],
+    "description": "A private wellness retreat featuring a monolithic carved limestone soaking tub, frameless fluted glass rainfall shower with skylight, and radiant heated stone slabs.",
+    "scope": [
+      "Underfloor hydronic radiant heating",
+      "Custom skylight structural framing",
+      "Continuous waterproof micro-limestone walls",
+      "Bespoke unlacquered brass hardware suite"
+    ],
+    "materials": ["French Limestone", "Unlacquered Brass", "Fluted Low-Iron Glass", "Natural White Oak"],
+    "testimonial": "“The tranquility and tactile warmth of this sanctuary exceeded all our dreams.” — C. Davenport"
+  },
+  {
+    "id": "greenwich-modern-renovation",
+    "title": "Greenwich Modern Heritage Estate",
+    "category": "construction",
+    "categoryLabel": "Ground-Up Construction",
+    "location": "Greenwich, Connecticut",
+    "area": "8,900 sq. ft.",
+    "year": "2024",
+    "budget": "$5.7M",
+    "duration": "18 Months",
+    "leadArchitect": "Julian Vance, AIA",
+    "coverImage": "assets/images/renovation-after.jpg",
+    "gallery": [
+      "assets/images/renovation-after.jpg",
+      "assets/images/renovation-before.jpg",
+      "assets/images/villa-architecture.jpg"
+    ],
+    "description": "Suburban estate transformed from a dated 1980s compartmentalized floorplan into an expansive Japandi architectural residence with seamless cross-ventilation and natural daylighting.",
+    "scope": [
+      "Structural wall removal & seismic bracing",
+      "Custom microcement fireplace installation",
+      "European wide-plank white oak flooring",
+      "Full turnkey general contracting and handover"
+    ],
+    "materials": ["European White Oak", "Microcement", "Belgian Linen", "Matte Gunmetal"],
+    "testimonial": "“From 3D plans to final key handover, Atelier Aura managed every subcontractor with surgical accuracy.” — E. & R. Miller"
+  }
+]
